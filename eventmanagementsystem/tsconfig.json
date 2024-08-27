@@ -3,6 +3,11 @@
     "target": "ES6",
     "module": "commonjs",
     "strict": true,
+    "allowSyntheticDefaultImports": true,
+    "noImplicitAny": true,
+    "moduleResolution": "node",
+    "sourceMap": true,
+    "baseUrl": ".",
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
@@ -12,6 +17,6 @@
     "typeRoots": ["./node_modules/@types"],
     "outDir": "./dist"
   },
-  "include": ["src/**/*.ts", "server.ts", "api/**/*.ts"],
+  "include": ["src/**/*.ts", "server.ts"],
   "exclude": ["node_modules"]
 }
