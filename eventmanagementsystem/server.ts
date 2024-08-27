@@ -1,4 +1,4 @@
-import express from "express";
+import express, { Request, Response } from "express";
 import { connectToDatabase } from "./src/DatabaseConfig/dbConfig";
 import userRoutes from "./src/Routes/userRoutes";
 import eventRoutes from "./src/Routes/eventRoutes";
@@ -8,6 +8,12 @@ import pdfRouter from "./src/Routes/pdfRoutes";
 const app = express();
 const PORT = 5000;
 app.use(express.json());
+
+app.get("/", (req: Request, res: Response) => {
+  return res.send(
+    "You have successfully connected to the event management system."
+  );
+});
 
 app.use("/users", userRoutes);
 app.use("/events", eventRoutes);

@@ -21,6 +21,9 @@ const pdfRoutes_1 = __importDefault(require("./src/Routes/pdfRoutes"));
 const app = (0, express_1.default)();
 const PORT = 5000;
 app.use(express_1.default.json());
+app.get("/", (req, res) => {
+    return res.send("You have successfully connected to the event management system.");
+});
 app.use("/users", userRoutes_1.default);
 app.use("/events", eventRoutes_1.default);
 app.use("/participants", participantRoutes_1.default);
