@@ -31,7 +31,7 @@ const connectToDatabase = () => __awaiter(void 0, void 0, void 0, function* () {
         console.log("Database connected successfully");
     }
     catch (error) {
-        console.error("Error connecting to the database:", error);
+        console.error("1 Error connecting to the database:", error);
         throw error;
     }
 });
