@@ -2,10 +2,10 @@
   "version": 2,
   "builds": [
     {
-      "src": "./server.ts",
+      "src": "server.ts",
       "use": "@vercel/node",
       "config": {
-        "includeFiles": ["src/**/*.ts", "server.ts", "dbconfig/ormconfig.ts"]
+        "includeFiles": ["src/**/*.ts", "server.ts"]
       }
     }
   ],
