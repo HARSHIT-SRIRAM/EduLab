@@ -19,6 +19,7 @@ const participant_1 = require("../Models/participant");
 const users_1 = require("../Models/users");
 const path_1 = __importDefault(require("path"));
 const dbPath = path_1.default.resolve(__dirname, "../DatabaseConfig/event_management.db");
+console.log(`Database path resolved to: ${dbPath}`);
 exports.AppDataSource = new typeorm_1.DataSource({
     type: "sqlite",
     database: dbPath,
@@ -31,7 +32,10 @@ const connectToDatabase = () => __awaiter(void 0, void 0, void 0, function* () {
         console.log("Database connected successfully");
     }
     catch (error) {
-        console.error("1 Error connecting to the database:", error);
+        console.error("1 Error connecting to the database:", error.message);
+        if (error.code === "SQLITE_CANTOPEN") {
+            console.error("Detailed Error:", error.message);
+        }
         throw error;
     }
 });
