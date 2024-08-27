@@ -12,6 +12,6 @@
     "typeRoots": ["./node_modules/@types"],
     "outDir": "./dist"
   },
-  "include": ["src/**/*.ts", "server.ts","api/**/*.ts"],
+  "include": ["src/**/*.ts", "server.ts", "api/**/*.ts"],
   "exclude": ["node_modules"]
 }
