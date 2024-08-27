@@ -1,0 +1,38 @@
+### Create a New Event
+POST http://localhost:5000/events/create-events
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjIsImVtYWlsIjoidW5pcXVlMUBleGFtcGxlLmNvbSIsImlhdCI6MTcyNDc2OTUwNywiZXhwIjoxNzI3MzYxNTA3fQ.FlSLuqgHea5tY5mfNVU1xUpI3SrxRpqrRFKkL6J0ECo
+Content-Type: application/json
+
+{
+  "name": "Tech Conference 2024",
+  "description": "A conference showcasing the latest in technology.",
+  "location": "Convention Center, Downtown",
+  "date": "2024-05-20",
+  "eventStartTime": "2024-05-20T09:00:00",
+  "participantLimit": 20
+}
+
+### Get an Event by ID
+GET http://localhost:5000/events/get-events/2
+
+### Update an Event by ID
+PUT http://localhost:5000/events/update-events/1
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjIsImVtYWlsIjoidW5pcXVlMUBleGFtcGxlLmNvbSIsImlhdCI6MTcyNDc2OTUwNywiZXhwIjoxNzI3MzYxNTA3fQ.FlSLuqgHea5tY5mfNVU1xUpI3SrxRpqrRFKkL6J0ECo
+Content-Type: application/json
+
+{
+  "name": "Updated Tech Conference 2024",
+  "description": "Updated description.",
+  "location": "Updated Location",
+  "date": "2024-06-01",
+  "eventStartTime": "2024-06-01T10:00:00"
+}
+
+### Delete an Event by ID
+DELETE http://localhost:5000/events/delete-events/4
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjIsImVtYWlsIjoidW5pcXVlMUBleGFtcGxlLmNvbSIsImlhdCI6MTcyNDc2OTUwNywiZXhwIjoxNzI3MzYxNTA3fQ.FlSLuqgHea5tY5mfNVU1xUpI3SrxRpqrRFKkL6J0ECo
+
+
+### Download PDF
+POST http://localhost:5000/generatepdf/generate-events-pdf
+Content-Type: application/pdf

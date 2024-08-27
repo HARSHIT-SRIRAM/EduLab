@@ -1,0 +1,13 @@
+### register in the event
+POST http://localhost:5000/participants/create-participant/12
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjIsImVtYWlsIjoidW5pcXVlMUBleGFtcGxlLmNvbSIsImlhdCI6MTcyNDc2OTUwNywiZXhwIjoxNzI3MzYxNTA3fQ.FlSLuqgHea5tY5mfNVU1xUpI3SrxRpqrRFKkL6J0ECo
+
+
+### Get events by user
+GET http://localhost:5000/participants/events-by-user
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjIsImVtYWlsIjoidW5pcXVlMUBleGFtcGxlLmNvbSIsImlhdCI6MTcyNDc2OTUwNywiZXhwIjoxNzI3MzYxNTA3fQ.FlSLuqgHea5tY5mfNVU1xUpI3SrxRpqrRFKkL6J0ECo
+
+
+### Unregister event
+DELETE http://localhost:5000/participants/unregister/40
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MjIsImVtYWlsIjoidW5pcXVlMUBleGFtcGxlLmNvbSIsImlhdCI6MTcyNDc2OTUwNywiZXhwIjoxNzI3MzYxNTA3fQ.FlSLuqgHea5tY5mfNVU1xUpI3SrxRpqrRFKkL6J0ECo

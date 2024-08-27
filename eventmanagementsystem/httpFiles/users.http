@@ -1,0 +1,33 @@
+### Register
+Post http://localhost:5000/users/register
+Content-Type: application/json
+
+{ 
+    "email": "unique2@example.com", 
+    "name": "Unique User 1", 
+    "password": "hashed_password_2", 
+    "phoneNumber": "1234567891"
+}
+
+### Login
+Post http://localhost:5000/users/login
+Content-Type: application/json
+
+{
+ "email": "unique1@example.com",
+ "password": "hashed_password_1"
+}
+
+### Get userby id
+GET http://localhost:5000/users/getbyuserid/6
+
+###
+Put http://localhost:5000/users/updateuser/3
+Content-Type: application/json
+
+{
+ "email": "jan.doe@example.com"
+}
+
+###
+DELETE http://localhost:5000/users/delete/6
