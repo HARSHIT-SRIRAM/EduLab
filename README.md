@@ -30,9 +30,9 @@ cd eventmanagementsystem
 ```
 
 Installation 
-
+Run this command 
 ```
-Run this command npm install
+npm install
 ```
 
 
@@ -41,22 +41,21 @@ Extensions
 
 
 Now start the server by the terminal in vs code (PowerShell or bash or cmd)
-
+use this command to start it:  
 ```
-use this command to start it:  npm start
+npm start
 ```
 
 Interaction
-
 >>> You can see HTTP files in the folder HTTP files where you can make the requests
 
 
-### for error
->firstly check the directory where you are
+### For errors
+> First check the directory where you are
 >
 >"yourlocalpaths" \EduLab\eventmanagementsystem 
 >
->make sure you are in eventmanagementsystem and run npm install and npm start
+> Make sure you are in eventmanagementsystem and run npm install and npm start
 
 
 
