@@ -4,7 +4,7 @@
   "main": "server.js",
   "scripts": {
     "start": "nodemon server.ts",
-    "build": "rimraf dist && tsc",
+    "build": "rimraf dist && tsc && xcopy /Y src\\DatabaseConfig\\event_management.db dist\\src\\DatabaseConfig\\event_management.db",
     "ts.check": "tsc --project tsconfig.json",
     "add-build": "git add dist",
     "test": "echo \"Error: no test specified\" && exit 1"
