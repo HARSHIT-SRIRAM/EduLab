@@ -45,17 +45,38 @@ use this command to start it:
 ```
 npm start
 ```
-
-Interaction
->>> You can see HTTP files in the folder HTTP files where you can make the requests
-
-
 ### For errors
 > First check the directory where you are
 >
 >"yourlocalpaths" \EduLab\eventmanagementsystem 
 >
 > Make sure you are in eventmanagementsystem and run npm install and npm start
+
+Interaction
+>>> You can see HTTP files in the folder HTTP files where you can make the requests
+
+
+### For pdf view while using rest client 
+>> When making requests there will be a response tab that generates a format of PDF where you can't see it so you need to download it.
+>> To download click save in the response tab, view the screenshot below to understand how to save PDF.
+>>
+>> where you can see in the provided screenshot the 
+
+![Screenshot (82)](https://github.com/user-attachments/assets/375dec95-5e56-4b63-8022-77cd095b2b07)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
