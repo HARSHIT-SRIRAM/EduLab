@@ -2,8 +2,9 @@ import { DataSource } from "typeorm";
 import { Event } from "../Models/event";
 import { Participant } from "../Models/participant";
 import { User } from "../Models/users";
+import path from "path";
 
-const dbPath = "event_management.db";
+const dbPath = path.resolve(__dirname, "../DatabaseConfig/event_management.db");
 
 export const AppDataSource = new DataSource({
   type: "sqlite",
