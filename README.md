@@ -15,7 +15,7 @@ The **Event Management System** is a web application designed to facilitate the 
 
 ### Prerequisites
 
-- Node.js (>= 16.x)
+- Node.js 
 - npm or yarn
 
 >> Kindly use vs code for better working with extensions
